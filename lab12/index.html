@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lab 12</title>
+	<script src="main.js"></script>
+
+	<style>
+		header {
+			text-align: center;
+		}
+		h3, h5 {
+			margin: .25rem auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h3>ЛАБОРАТОРНА РОБОТА #12</h3>
+		<h5><b>Тема</b>: Змішані симетричні криптосистеми. (Багатоалфавітна криптосистема Віженера).</h5>
+		<h5><b>Мета</b>: Навчитися використовувати потокові криптографічні алгоритми.</h5>
+	</header>
+	<hr>
+	<fieldset>
+		<legend>Шифрування</legend>
+		<label for="key">
+			<h4>Введіть повідомлення</h4>
+			<input type="text" id="w" value="Без охоти нема роботи">
+		</label>
+		<label for="key">
+			<h4>Введіть ключ</h4>
+			<input type="text" id="w2" value="Лежачогохлібаніденема">
+		</label>
+		<button onclick="cypherLetter()">Шифрувати</button>
+		<hr>
+		<p>Шифр:</p>
+		<div id="erupt"></div>
+	</fieldset>
+	
+
+
+	<fieldset>
+		<legend>Розифрування</legend>
+		<label for="key">
+			<h4>Введіть ключ</h4>
+			<input type="text" id="ew" value="">
+		</label>
+		<label for="key">
+			<h4>Введіть шифр</h4>
+			<input type="text" id="ew2" value="">
+		</label>
+		<button onclick="uncypherLetter()">розшифрувати</button>
+		<hr>
+		<p>Текст:</p>
+		<div id="tr"></div>
+	</fieldset>
+</body>
+</html>
