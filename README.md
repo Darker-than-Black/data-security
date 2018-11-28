@@ -4,7 +4,7 @@
 
 Посилання для перегляду робіт онлайн
 
-<a href="https://darker-than-black.github.io/data-security/lab#8/index.html">Реалізація Шифрy Трітеміуса</a>
-<a href="https://darker-than-black.github.io/data-security/lab#9/index.html">Реалізація Шифрy Плейфера</a>
-<a href="https://darker-than-black.github.io/data-security/lab#10/index.html">Реалізація Шифрy скітала («палиця»)</a>
+<a href="https://darker-than-black.github.io/data-security/lab#8/index.html">Реалізація Шифрy Трітеміуса</a><br>
+<a href="https://darker-than-black.github.io/data-security/lab#9/index.html">Реалізація Шифрy Плейфера</a><br>
+<a href="https://darker-than-black.github.io/data-security/lab#10/index.html">Реалізація Шифрy скітала («палиця»)</a><br>
 <a href="https://darker-than-black.github.io/data-security/lab#11/index.html">Реалізація Шифрy Квадрат Кардано</a>
