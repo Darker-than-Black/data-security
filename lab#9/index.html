@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab 9</title>
+
+	<style>
+		header {
+			text-align: center;
+		}
+		h3, h5 {
+			margin: .25rem auto;
+		}
+	</style>
+
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<header>
+		<h3>ЛАБОРАТОРНА РОБОТА #9</h3>
+		<h5><b>Тема</b>: Потокові криптографічні алгоритми. (Шифри Плейфера, «подвійний квадрат» Уітстона, Вернама).</h5>
+		<h5><b>Мета</b>: Навчитися використовувати потокові криптографічні алгоритми.</h5>
+	</header>
+	<hr>
+	<h4>Реалізація Шифру Плейфера</h4>
+	<hr>
+	<label for="key">
+		Create key:
+		<input type="text" id="key" value="vocabulary">
+	</label>
+	<button id="addKey">Add Key</button>
+	<hr>
+	<h5>Generate matrix 5x5</h5>
+	<button onclick="genMatrix()">Generate</button> <br>
+	<div id="matrixShow"></div>
+	<hr>
+	<label for="text">
+		Write text:
+		<input type="text" id="text" value="transformtranslate">
+		<button id="transformText">розбити на біграми</button>
+	</label><br>
+	<b>біграми:</b> <span id="biagrams"> </span>
+	<hr>
+	<div>Зашифрований текст: <b id="cypher"></b></div>
+	<div>Зашифрований текст: <b id="cypher2"></b></div>
+	<hr>
+	<button onclick="uncypherLetter()">uncypher</button>
+	<div>Розшифрований текст: <b id="uncypher"></b></div>
+	<div>Розшифрований текст: <b id="uncypher2"></b></div>
+	<hr>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab 10</title>
+
+	<style>
+		header {
+			text-align: center;
+		}
+		h3, h5 {
+			margin: .25rem auto;
+		}
+	</style>
+
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<header>
+		<h3>ЛАБОРАТОРНА РОБОТА #8</h3>
+		<h5><b>Тема</b>: Блокові криптографічні алгоритми. (Шифри скітала («палиця»), стандартної та вертикальної перестановки).</h5>
+		<h5><b>Мета</b>: Навчитися використовувати потокові криптографічні алгоритми.</h5>
+	</header>
+	<hr>
+	<h4>Реалізація Шифрy скітала («палиця»)</h4>
+	<hr>
+	<label for="key">
+		<h4>Create key:</h4>
+		<label for="">the number of columns:</label>
+		<input type="text" id="w" value="5">
+	</label>
+	<button id="addKey">Add Key</button>
+	<hr>
+	<label for="text">
+		Write text:
+		<input type="text" id="text" value="transform translate">
+		<button id="transformText">Add TEXT</button>
+	</label><br>
+	<hr>
+	<div>Матриця: <b id="matrix"></b></div>
+	<hr>
+	<div>Зашифрований текст: <b id="cypher"></b></div>
+	<hr>
+	<button onclick="uncypherLetter()">uncypher</button>
+	<div>Розшифрований текст: <b id="uncypher"></b></div>
+	<hr>
+</body>
+</html>

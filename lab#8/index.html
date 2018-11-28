@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab 8</title>
+
+	<style>
+		header {
+			text-align: center;
+		}
+		h3, h5 {
+			margin: .25rem auto;
+		}
+	</style>
+
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<header>
+		<h3>ЛАБОРАТОРНА РОБОТА #8</h3>
+		<h5><b>Тема</b>: Потокові криптографічні алгоритми. (Шифри Цезаря, Трітеміуса, Полібія).</h5>
+		<h5><b>Мета</b>: Навчитися використовувати потокові криптографічні алгоритми.</h5>
+	</header>
+	<hr>
+	<h4>Реалізація Шифрy Трітеміуса</h4>
+	<hr>
+	<label for="key">
+		Create key:
+		<input type="text" id="key" value="vocabulary">
+	</label>
+	<button id="addKey">Add Key</button>
+	<hr>
+	<label for="text">
+		Write text:
+		<input type="text" id="text" value="transform translate">
+		<button id="transformText">Add TEXT</button>
+	</label><br>
+	<hr>
+	<div>Зашифрований текст: <b id="cypher"></b></div>
+	<hr>
+	<button onclick="uncypherLetter()">uncypher</button>
+	<div>Розшифрований текст: <b id="uncypher"></b></div>
+	<hr>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab 11</title>
+
+	<style>
+		header {
+			text-align: center;
+		}
+		h3, h5 {
+			margin: .25rem auto;
+		}
+
+		#matrix {
+			display: grid;
+			width: 142px;
+			grid-template-areas: "a b"
+							    "d c";
+		}
+
+		table {
+			border: 1px solid black;
+			width: 70px;
+		}
+
+		.g0 {
+		  grid-area: a;
+		}
+		.g1 {
+		  grid-area: b;
+		}
+		.g2 {
+		  grid-area: c;
+		}
+		.g3 {
+		  grid-area: d;
+		}
+	</style>
+
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<header>
+		<h3>ЛАБОРАТОРНА РОБОТА #11</h3>
+		<h5><b>Тема</b>: Блокові криптографічні алгоритми. (Шифри з використанням комбінованих перестановок, шифри-трафарети, квадрат та прямокутник Кардано).</h5>
+		<h5><b>Мета</b>: Навчитися використовувати потокові криптографічні алгоритми.</h5>
+	</header>
+	<hr>
+	<h4>Реалізація шифру Квадрат Кардано</h4>
+	<hr>
+	<label for="text">
+		Write text:
+		<input type="text" id="text" value="I am software developer">
+		<button id="transformText">Add TEXT</button>
+	</label><br>
+	<hr>
+	<label for="key">
+		<h4>Create key</h4>
+		<p>Введіть значення ключа через кому, значення повинні бути в діапазоні від 1 до 16</p>
+		<p><b id="recom"></b></p>
+		<input type="text" id="w" value="4,9,15,2,7">
+	</label>
+	<button id="addKey">Add Key</button>
+	<hr>
+	<div>Матриця: </div>
+	<p><b id="matrix"></b></p>
+	<hr>
+	<button onclick="uncypherLetter()">uncypher</button>
+	<div>Розшифрований текст: <b id="uncypher"></b></div>
+	<hr>
+</body>
+</html>
